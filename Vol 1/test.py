@@ -1,6 +1,3 @@
-a = 1
-b = 3
-
-if (a == '1' or b =='2'):
-    print('hi')
+for i in range(1, 1, -1):
+    print(i)
 print('1')
