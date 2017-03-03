@@ -14,7 +14,7 @@ def checker(high, low, number):
         flag = True
     elif not flag:
         return True
-    if high == 1 and low ==1:
+    if high == 1 and low == 1:
         return True
     return False
 
@@ -24,12 +24,12 @@ while line:
     high = int(scores[0])
     low = int(scores[1])
     if low > high:
-        tep = low
-        low = high
-        high = tep
-    flag = False
+        temp = high
+        high = low
+        low = temp
     winner = high
+    flag = False
     if not checker(high, low, 100):
         winner = low
-    print (winner)
-line = sys.stdin.readline()
+    print winner
+    line = sys.stdin.readline()
