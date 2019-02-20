@@ -29,7 +29,7 @@ while line:
         low = temp
     winner = high
     flag = False
-    if not checker(high, low, 100):
+    if not checker(high, low, (100 if (high > 100) else high)):
         winner = low
-    print winner
+    print  winner
     line = sys.stdin.readline()
